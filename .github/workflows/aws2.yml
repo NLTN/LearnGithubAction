@@ -35,9 +35,9 @@ on:
 env:
   AWS_REGION: us-west-1                   # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: learn_github_action_app2           # set this to your Amazon ECR repository name
-  ECS_SERVICE: app1_service                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: github_action_dev                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: .github/workflows/task-definition-app2.json # set this to the path to your Amazon ECS task definition
+  ECS_SERVICE: app2_service1                 # set this to your Amazon ECS service name
+  ECS_CLUSTER: app2_dev_cluster                 # set this to your Amazon ECS cluster name
+  ECS_TASK_DEFINITION: .github/workflows/app2-task1-definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: learn_github_action_app2           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
@@ -75,7 +75,7 @@ jobs:
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
-        docker build --file build/app1.Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+        docker build --file build/app2.Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
