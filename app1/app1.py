@@ -13,7 +13,7 @@ def task_1(text:str):
 #     response = requests.post(url, json=data)
 #     print("response= ", response.json())
 
-schedule.every().minute.at(":00").do(task_1, "App1: Hello World!!!")
+schedule.every().minute.at(":00").do(task_1, "App#1: Hello World!!!")
 # schedule.run_all()  # run
 
 dt = datetime.datetime.now()
