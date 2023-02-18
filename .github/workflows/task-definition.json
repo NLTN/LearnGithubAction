@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/learn_github_action_app1_task:7",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/learn_github_action_app1_task",
     "containerDefinitions": [
         {
             "name": "learn_github_action",
