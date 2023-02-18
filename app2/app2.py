@@ -23,7 +23,7 @@ def task_2(text:str):
 #     print("response= ", response.json())
 
 
-schedule.every().minute.at(":00").do(task_2, "Application#2: Hello World")
+schedule.every().minute.at(":00").do(task_2, "Application#02: Hello World")
 # schedule.run_all()  # run
 
 dt = datetime.datetime.now()
