@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/learn_github_action_app2_task1:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/learn_github_action_app2_task1:5",
     "containerDefinitions": [
         {
             "name": "learn_github_action_app2",
-            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app2",
+            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app2:01fda4c312ddd0e7db302d81bcfa45cfbd53e078",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,7 +16,6 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": []
         }
@@ -25,7 +24,7 @@
     "taskRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 5,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -58,7 +57,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-18T18:28:36.373Z",
-    "registeredBy": "arn:aws:iam::336825270849:root",
+    "registeredAt": "2023-02-18T18:55:31.426Z",
+    "registeredBy": "arn:aws:iam::336825270849:user/github_action",
     "tags": []
 }
