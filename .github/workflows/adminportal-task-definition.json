@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/adminportal:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/adminportal:3",
     "containerDefinitions": [
         {
             "name": "adminportal",
@@ -7,8 +7,8 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "adminportal-80-tcp",
-                    "containerPort": 80,
+                    "name": "adminportal-3000-tcp",
+                    "containerPort": 3000,
                     "hostPort": 0,
                     "protocol": "tcp",
                     "appProtocol": "http"
@@ -22,14 +22,18 @@
         }
     ],
     "family": "adminportal",
+    "taskRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "networkMode": "bridge",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
         {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -48,7 +52,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-19T03:11:16.230Z",
+    "registeredAt": "2023-02-19T03:55:48.886Z",
     "registeredBy": "arn:aws:iam::336825270849:root",
     "tags": []
 }
