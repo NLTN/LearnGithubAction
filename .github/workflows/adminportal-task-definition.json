@@ -1,14 +1,14 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/adminportal:26",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/adminportal:31",
     "containerDefinitions": [
         {
             "name": "adminportal",
-            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/adminportal:07af7666b6ff695964a8f05f2621e4b90f47d40d",
+            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/adminportal",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "adminportal-80-tcp",
-                    "containerPort": 80,
+                    "name": "adminportal-3000-tcp",
+                    "containerPort": 3000,
                     "hostPort": 80,
                     "protocol": "tcp",
                     "appProtocol": "http"
@@ -16,6 +16,7 @@
             ],
             "essential": true,
             "environment": [],
+            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": []
         }
@@ -24,7 +25,7 @@
     "taskRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "networkMode": "bridge",
-    "revision": 26,
+    "revision": 31,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -51,7 +52,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-19T09:00:22.291Z",
+    "registeredAt": "2023-02-19T11:08:47.471Z",
     "registeredBy": "arn:aws:iam::336825270849:root",
     "tags": []
 }
