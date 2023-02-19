@@ -3,8 +3,9 @@ WORKDIR /app
 
 ENV NODE_ENV=dev
 COPY adminportal/ ./
-RUN npm install
-# RUN npm run build
+# RUN npm install
+RUN npm ci
+RUN npm run build
 
 
 EXPOSE 3000
