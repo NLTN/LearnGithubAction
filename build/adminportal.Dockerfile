@@ -1,5 +1,5 @@
 FROM node:18.14.1 as builder
-WORKDIR /app
+WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 ENV NODE_ENV=dev
