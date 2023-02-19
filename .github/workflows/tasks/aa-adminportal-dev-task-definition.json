@@ -1,0 +1,58 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/aa-adminportal-dev:1",
+    "containerDefinitions": [
+        {
+            "name": "aa-adminportal-dev",
+            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/aa-adminportal-dev",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "aa-adminportal-dev-3000-tcp",
+                    "containerPort": 3000,
+                    "hostPort": 0,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "family": "aa-adminportal-dev",
+    "taskRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
+    "networkMode": "bridge",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "1024",
+    "memory": "512",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2023-02-19T21:14:31.678Z",
+    "registeredBy": "arn:aws:iam::336825270849:root",
+    "tags": []
+}
