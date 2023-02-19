@@ -4,7 +4,7 @@ WORKDIR /app
 ENV NODE_ENV=production
 COPY adminportal/ ./
 RUN npm ci
-RUN npm build
+RUN npm run build
 
 
 EXPOSE 3000
