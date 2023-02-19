@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React@334455
+          Learn React@33445566
         </a>
       </header>
     </div>
