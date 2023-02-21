@@ -37,7 +37,7 @@ env:
   ECR_REPOSITORY: learn_github_action_app1           # set this to your Amazon ECR repository name
   ECS_SERVICE: service1                 # set this to your Amazon ECS service name
   ECS_CLUSTER: aa-twitter-scraper-dev                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: .github/workflows/tasks/multicontainer-task-definition.json # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: .github/workflows/tasks/app1-task-definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: learn_github_action_app1           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
