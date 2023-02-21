@@ -34,12 +34,12 @@ on:
 
 env:
   AWS_REGION: us-west-1                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: adminportal           # set this to your Amazon ECR repository name
-  ECS_SERVICE: adminportal                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: NodeCluster                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: .github/workflows/adminportal-task-definition.json # set this to the path to your Amazon ECS task definition
+  ECR_REPOSITORY: adminportal-dev           # set this to your Amazon ECR repository name
+  ECS_SERVICE: adminportal-dev                 # set this to your Amazon ECS service name
+  ECS_CLUSTER: DevCluster-Micro                 # set this to your Amazon ECS cluster name
+  ECS_TASK_DEFINITION: .github/workflows/tasks/adminportal-dev-task-definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: adminportal           # set this to the name of the container in the
+  CONTAINER_NAME: adminportal-dev           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 permissions:
@@ -70,7 +70,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        IMAGE_TAG: ${{ github.sha }}
+        IMAGE_TAG: latest #${{ github.sha }}
       run: |
         # Build a docker container and
         # push it to ECR so that it can

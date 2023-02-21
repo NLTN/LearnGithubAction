@@ -1,16 +1,16 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:676120396780:task-definition/learn_github_action_app1:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:676120396780:task-definition/adminportal-dev:1",
     "containerDefinitions": [
         {
-            "name": "learn_github_action_app1",
-            "image": "676120396780.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app1",
-            "cpu": 128,
-            "memory": 128,
+            "name": "adminportal-dev",
+            "image": "676120396780.dkr.ecr.us-west-1.amazonaws.com/adminportal-dev",
+            "cpu": 256,
+            "memory": 256,
             "portMappings": [
                 {
-                    "name": "learn_github_action_app1-80-tcp",
-                    "containerPort": 0,
-                    "hostPort": 0,
+                    "name": "adminportal-dev-3000-tcp",
+                    "containerPort": 3000,
+                    "hostPort": 80,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 }
@@ -22,7 +22,7 @@
             "volumesFrom": []
         }
     ],
-    "family": "learn_github_action_app1",
+    "family": "adminportal-dev",
     "taskRoleArn": "arn:aws:iam::676120396780:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::676120396780:role/ecsTaskExecutionRole",
     "networkMode": "bridge",
@@ -47,13 +47,13 @@
     "requiresCompatibilities": [
         "EC2"
     ],
-    "cpu": "128",
-    "memory": "128",
+    "cpu": "256",
+    "memory": "256",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-21T06:12:54.734Z",
+    "registeredAt": "2023-02-21T06:46:15.170Z",
     "registeredBy": "arn:aws:iam::676120396780:root",
     "tags": []
 }
