@@ -1,12 +1,19 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/app1:4",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:676120396780:task-definition/learn_github_action_app1:1",
     "containerDefinitions": [
         {
             "name": "learn_github_action_app1",
-            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app1",
-            "cpu": 128,
-            "memory": 128,
-            "portMappings": [],
+            "image": "676120396780.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app1",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "learn_github_action_app1-80-tcp",
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
             "essential": true,
             "environment": [],
             "environmentFiles": [],
@@ -14,11 +21,11 @@
             "volumesFrom": []
         }
     ],
-    "family": "app1",
-    "taskRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
-    "executionRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
+    "family": "learn_github_action_app1",
+    "taskRoleArn": "arn:aws:iam::676120396780:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::676120396780:role/ecsTaskExecutionRole",
     "networkMode": "bridge",
-    "revision": 4,
+    "revision": 1,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -34,19 +41,18 @@
     ],
     "placementConstraints": [],
     "compatibilities": [
-        "EXTERNAL",
         "EC2"
     ],
     "requiresCompatibilities": [
         "EC2"
     ],
-    "cpu": "128",
-    "memory": "128",
+    "cpu": "512",
+    "memory": "512",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-21T02:26:17.704Z",
-    "registeredBy": "arn:aws:iam::336825270849:root",
+    "registeredAt": "2023-02-21T06:12:54.734Z",
+    "registeredBy": "arn:aws:iam::676120396780:root",
     "tags": []
 }
