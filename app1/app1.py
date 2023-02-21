@@ -27,7 +27,7 @@ schedule.every().minute.at(":00").do(task_2, "Application#001: Hello World")
 # schedule.run_all()  # run
 
 dt = datetime.datetime.now()
-task_1(f"App #1 384 MB of RAM started at {dt.strftime('%Y-%m-%d %H:%M:%S')}")
+task_1(f"App #1p2 384 MB of RAM started at {dt.strftime('%Y-%m-%d %H:%M:%S')}")
 
 while True:
     schedule.run_pending()
