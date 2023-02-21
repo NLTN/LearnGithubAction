@@ -14,7 +14,7 @@
             "volumesFrom": []
         }
     ],
-    "family": "app1",
+    "family": "app2",
     "taskRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "networkMode": "bridge",
