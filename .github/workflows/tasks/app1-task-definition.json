@@ -6,15 +6,7 @@
             "image": "676120396780.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app1",
             "cpu": 128,
             "memory": 128,
-            "portMappings": [
-                {
-                    "name": "learn_github_action_app1-80-tcp",
-                    "containerPort": 0,
-                    "hostPort": 0,
-                    "protocol": "tcp",
-                    "appProtocol": "http"
-                }
-            ],
+            "portMappings": [],
             "essential": true,
             "environment": [],
             "environmentFiles": [],
