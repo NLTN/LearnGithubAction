@@ -1,27 +1,25 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/learn_github_action_multicontainer:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-1:336825270849:task-definition/learn_github_action_multicontainer:5",
     "containerDefinitions": [
         {
             "name": "learn_github_action_app1",
-            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app1",
+            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app1:latest",
             "cpu": 512,
-            "memory": 256,
+            "memory": 512,
             "portMappings": [],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": []
         },
         {
             "name": "learn_github_action_app2",
-            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app2",
+            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app2:latest",
             "cpu": 512,
-            "memory": 256,
+            "memory": 512,
             "portMappings": [],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": []
         }
@@ -30,7 +28,7 @@
     "taskRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::336825270849:role/ecsTaskExecutionRole",
     "networkMode": "bridge",
-    "revision": 1,
+    "revision": 5,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -58,7 +56,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-02-20T22:11:05.276Z",
+    "registeredAt": "2023-02-21T02:16:02.428Z",
     "registeredBy": "arn:aws:iam::336825270849:root",
     "tags": []
 }
