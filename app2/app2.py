@@ -27,7 +27,7 @@ schedule.every().minute.at(":00").do(task_2, "Application#2: Hello World")
 # schedule.run_all()  # run
 
 dt = datetime.datetime.now()
-task_1(f"Application #2 on ProCluster started at {dt.strftime('%Y-%m-%d %H:%M:%S')}")
+task_1(f"Application #2_WOW_COOL on ProCluster started at {dt.strftime('%Y-%m-%d %H:%M:%S')}")
 
 while True:
     schedule.run_pending()
