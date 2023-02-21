@@ -4,8 +4,8 @@
         {
             "name": "adminportal-dev",
             "image": "676120396780.dkr.ecr.us-west-1.amazonaws.com/adminportal-dev",
-            "cpu": 256,
-            "memory": 256,
+            "cpu": 384,
+            "memory": 384,
             "portMappings": [
                 {
                     "name": "adminportal-dev-3000-tcp",
@@ -47,8 +47,8 @@
     "requiresCompatibilities": [
         "EC2"
     ],
-    "cpu": "256",
-    "memory": "256",
+    "cpu": "384",
+    "memory": "384",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
