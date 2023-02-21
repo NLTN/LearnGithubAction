@@ -3,9 +3,9 @@
     "containerDefinitions": [
         {
             "name": "learn_github_action_app1",
-            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app1:latest",
-            "cpu": 512,
-            "memory": 512,
+            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app1",
+            "cpu": 384,
+            "memory": 384,
             "portMappings": [],
             "essential": true,
             "environment": [],
@@ -14,9 +14,9 @@
         },
         {
             "name": "learn_github_action_app2",
-            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app2:latest",
-            "cpu": 512,
-            "memory": 512,
+            "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app2",
+            "cpu": 384,
+            "memory": 384,
             "portMappings": [],
             "essential": true,
             "environment": [],
@@ -51,7 +51,7 @@
         "EC2"
     ],
     "cpu": "1024",
-    "memory": "1024",
+    "memory": "900",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
