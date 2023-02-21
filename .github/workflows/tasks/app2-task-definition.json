@@ -4,8 +4,8 @@
         {
             "name": "learn_github_action_app2",
             "image": "336825270849.dkr.ecr.us-west-1.amazonaws.com/learn_github_action_app2",
-            "cpu": 512,
-            "memory": 384,
+            "cpu": 256,
+            "memory": 256,
             "portMappings": [],
             "essential": true,
             "environment": [],
@@ -40,8 +40,8 @@
     "requiresCompatibilities": [
         "EC2"
     ],
-    "cpu": "512",
-    "memory": "384",
+    "cpu": "256",
+    "memory": "256",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
