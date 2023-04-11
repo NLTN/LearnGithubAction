@@ -1,8 +1,8 @@
 __all__ = ['UserBLL', 'DataSourceBLL', 'RawDataBLL', 'ScraperTaskBLL', 'HashtagBLL', 'TopicBLL', 'TwitterUserBLL', 'TweetBLL', 'Between']
 from abc import ABC, abstractmethod
-from .dbconnection import DatabaseConnection
-from .DAL import *
-from .models import *
+from dbconnection import DatabaseConnection
+from DAL import *
+from models import *
 from dataclasses import dataclass
 import re
 

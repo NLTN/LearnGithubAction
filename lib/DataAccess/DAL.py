@@ -3,7 +3,7 @@ from sqlalchemy.sql import func
 from sqlalchemy import select, update, delete, case, ColumnElement
 from sqlalchemy.dialects.mysql import insert
 from sqlalchemy.orm import Session, defer
-from .models import *
+from models import *
 import uuid
 
 DEFAULT_LIMIT = 99999
